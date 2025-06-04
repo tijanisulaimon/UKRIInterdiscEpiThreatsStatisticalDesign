@@ -2,13 +2,14 @@
 # in mosquito abundance across ecological strata/ land use types
 
 library("ggplot2")
-library("GLMMmisc")
+library("GLMMmisc") # available via devtools::install_github("pcdjohnson/GLMMmisc")
 library("parallel")
 
 # From the outbreak entomology report, HLC caught between 0 and 20, but often <5 of each
 # species, difficult to find data on numbers in areas that have artisanal mining in other places
 
 # Mosquito surveys - quarterly
+# Gabon estimates
 # https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0011501
 # anthropic 482/1340 hours, forest 110/1645 hours
 
@@ -190,4 +191,4 @@ length(l2[l2==5])
 #*****************************************************************************
 # 93% power to detect a 5x difference between urban/ forest and the other categories
 # 91% power to detect a 2x difference between urban/ forest and other categories
-# % power to detect differences of 1x in urban, 1.5x in mining, x3 palmoil, 1.5x cocoa1, 2x cocoa2
+# 87% power to detect differences of 1x in urban, 1.5x in mining, x3 palmoil, 1.5x cocoa1, 2x cocoa2
