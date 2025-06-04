@@ -1,4 +1,4 @@
-# Quantifying Supply Chain Drivers of Epidemic Dengue Risk for Systemic Prevention
+# Quantifying Supply Chain Drivers of Epidemic Aedes-borne Virus Risk for Systemic Prevention
 
 ## Code used to inform study design
 This repository contains the code used to inform the study design for the entomological and epidemiological aspects of our UKRI application using power analysis by simulation.
