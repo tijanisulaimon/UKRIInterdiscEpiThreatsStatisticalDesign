@@ -1,4 +1,8 @@
-# script to estimate power to compare seroprevalence between predicted high and low risk areas
+# script to estimate power to compare seroprevalence and force of infection between predicted high and low risk areas
+
+# assume a time constant and age constant FOI
+
+
 start.time <- Sys.time()
 
 # load packages
@@ -16,6 +20,7 @@ nsim <- 1000
 n.village <- 50    # number of villages
 n.hh <- 10         # number of households per village
 n <- 2             # number of people per household   
+
 
 # if evenly distribute high and low risk sites across
 # the nine sentinel sites (depending on whether sentinel sites)
@@ -53,8 +58,8 @@ simdat <-
                village = par.tab["village", 1]))
 
 
-simdat$risk.level <- as.factor(simdat$risk.level)
 
+simdat$risk.level <- as.factor(simdat$risk.level)
 
 summary <- ddply(simdat,.(risk.level),summarise,num=sum(response),denom=sum(n))
 meanPrev <- binom.confint(summary$num,summary$denom,methods="exact")

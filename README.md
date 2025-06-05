@@ -9,6 +9,6 @@ This repository contains the code used to inform the study design for the entomo
 
 - **Seroprevalence.R**: power analysis for cross-sectional surveys to estimate differences in seroprevalence between high and low risk areas.
 
-  - **ForceOfInfection.R**: power analysis to inform study desing to estimate time-varying force of infection.
+- **ForceOfInfection.R**: power analysis to inform study desing to estimate time-varying force of infection.
 
-You will need to install the GLMMmisc which can be found at devtools::install_github("pcdjohnson/GLMMmisc")
+You will need to install the GLMMmisc package which can be found at devtools::install_github("pcdjohnson/GLMMmisc")
