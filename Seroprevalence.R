@@ -69,8 +69,6 @@ ggplot(meanPrev) +
   geom_point(aes(x=risk.level,y=mean*100)) +
   geom_errorbar(aes(x=risk.level,ymin=lower*100,ymax=upper*100))
 
-
-
 #*************Simulate, model fit and calculate p-value************
 # function to simulate data and estimate p-value for null hypothesis 
 # that high and low risk areas have the same seroprevalence
